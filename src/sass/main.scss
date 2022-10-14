@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import './resets';
+@import './variables';
+@import './hero';
+@import './items';
+@import './footer';
+@import './dropdown';
+@import './responsive';
+@import './product-details';
+@import './cart';
+@import './form-and-label';
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: $header;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    div {
+        padding: 2px;
+
+        h1 {
+            a {
+                color: $anchor;
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        padding: 2px;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-basis: 60%;
+        opacity: 1;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+            li {
+                margin-right: 10px;
+
+                a {
+                    color: $anchor;
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding: 10px;
+                }
+
+                a:hover {
+                    color: $hover;
+
+                    i {
+                        transform: scale(1.3);
+                        transition: transform 0.2s ease;
+                    }
+                }
+            }
+        }
+
+        form {
+            display: flex;
+
+            input {
+                width: auto;
+                height: 37px;
+                padding: 7px;
+                border-radius: 7px;
+                font-size: 16px;
+                border: 1px solid whitesmoke;
+                color: $text;
+            }
+
+            button {
+                width: 76px;
+                height: 37px;
+                color: $hover;
+                font-size: 17px;
+                border-radius: 7px;
+                background-color: rgba(0, 0, 0, 0);
+                border: 1px solid $hover;
+                padding: 7px;
+                margin-left: 4px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: $hover;
+                color: white;
+                transition: all 0.2s;
+            }
+        }
+    }
+}
+
+.backToTop {
+    text-align: center;
+    width: 46px;
+    height: 37px;
+    color: $hover;
+    font-size: 17px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid $hover;
+    padding: 7px;
+    margin-left: 4px;
+    cursor: pointer;
+    position: fixed;
+    right: 7px;
+    bottom: 80px;
+}
+
+.backToTop:hover {
+    background-color: $hover;
+    color: white;
+    transition: all 0.2s;
+}

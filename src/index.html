@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="#" class="homeBtn">Shop</a></h1>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="homeBtn">Home</a></li>
+                <li><a href="https://github.com/filipzlatojevic" target="_blank">Info</a></li>
+                <li><a href="#items" class="shop">Shop</a></li>
+                <li><a href="#cart" class="cart"><i class="material-icons">&#xe8cb;</i></a></li>
+            </ul>
+            <form id="searchForm" role="search">
+                <input class="" type="text" placeholder="Search product" name="inputData" aria-label="Search">
+                <button class="" type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-and-items">
+            <!-- macbook picture -->
+            <section id="hero">
+                <h4>Trade in offer</h4>
+                <h2>Super value deals</h2>
+                <h1>On all products</h1>
+                <h4>Save more with coupons & up to 70% off!<h4>
+                        <button><a href="#items">Shop Now</a></button>
+            </section>
+            <!-- items -->
+            <article>
+                <div>
+                    <h2>Products</h2>
+                    <p>Collection of new Modern Design</p>
+                    <form class="checkbox">
+                        <div>
+                            <input type="checkbox" id="accessories" name="accessories" value="accessories">
+                            <label for="accessories">accessories</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="apparel" name="apparel" value="apparel">
+                            <label for="apparel">apparel</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="bags" name="bags" value="bags">
+                            <label for="bags">bags</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="drinkware" name="drinkware" value="drinkware">
+                            <label for="drinkware">drinkware</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="office" name="office" value="office">
+                            <label for="office">office</label>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit" id="checkboxBtn">
+                        </div>
+                    </form>
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="">Choose</option>
+                        <option value="ascending">Ascending</option>
+                        <option value="descending">Descending</option>
+                    </select>
+                </div>
+                <section class="items-container" id="items">
+                </section>
+            </article>
+        </div>
+        <div class="product-page"></div>
+        <!-- cart -->
+        <div id="cart">
+            <h2>Cart</h2>
+            <aside class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Remove</td>
+                            <td>Image</td>
+                            <td>Name</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                            <td>Subtotal</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </aside>
+            <aside class="sum">
+                <h2>Cart Total</h2>
+                <div>
+                    <span>Total:</span>
+                    <span class="total"></span>
+                </div>
+                <button>Buy</button>
+            </aside>
+        </div>
+    </main>
+    <a href="#items" class="backToTop">Top</a>
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2022 <a href="https://github.com/filipzlatojevic" target="_blank">Filip
+                    Zlatojević</a></p>
+            <ul class="footer-list">
+                <li><a href="#" class="homeBtn">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Sorting</a></li>
+                <li><a href="#">Top</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="dropdown.js"></script>
+</body>
+
+</html>

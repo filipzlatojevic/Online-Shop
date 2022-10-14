@@ -1,0 +1,103 @@
+.product-details {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 60px 30px;
+    display: flex;
+    gap: 20px;
+
+    button.back {
+        position: fixed;
+        z-index: 2;
+        margin-top: 90px;
+        left: 30px;
+        width: 70px;
+        height: 37px;
+        font-size: 17px;
+        border-radius: 7px;
+        background-color: $header;
+        border: 1px solid $hover;
+        color: $hover;
+        cursor: pointer;
+        top: 12px;
+    }
+
+    button.back:hover {
+        background-color: $hover;
+        color: white;
+        transition: all 0.2s;
+    }
+
+    .images {
+        flex-basis: 50%;
+        max-width: 700px;
+
+        img {
+            width: 100%;
+        }
+
+        .small-images {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 32%;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .details-text {
+        flex-basis: 50%;
+
+        span {
+            font-size: 14px;
+        }
+
+        h4 {
+            padding: 15px 0 2px;
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+
+        input {
+            width: 50px;
+            height: 37px;
+            padding-left: 10px;
+            font-size: 15px;
+            margin-right: 7px;
+            border-radius: 7px;
+            border: 1px solid $hover;
+        }
+
+        button {
+            width: 100px;
+            height: 37px;
+            font-size: 15px;
+            border-radius: 7px;
+            background-color: $hover;
+            border: 1px solid $hover;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transition: all 0.2s;
+            background-color: rgba(0, 0, 0, 0);
+            color: $hover;
+        }
+
+        h5 {
+            font-size: 18px;
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            letter-spacing: 1px;
+        }
+
+    }
+}

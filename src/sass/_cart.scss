@@ -1,0 +1,129 @@
+#cart {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+
+    h2 {
+        align-self: center;
+        margin-bottom: 5px;
+    }
+
+    .table {
+        overflow-x: scroll;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            white-space: nowrap;
+
+            img {
+                width: 70px;
+            }
+
+            td:nth-child(1) {
+                width: 100px;
+                text-align: center;
+            }
+
+            td:nth-child(2) {
+                width: 150px;
+                text-align: center;
+            }
+
+            td:nth-child(3) {
+                width: 250px;
+                text-align: center;
+            }
+
+            td:nth-child(4),
+            td:nth-child(5),
+            td:nth-child(6) {
+                width: 150px;
+                text-align: center;
+            }
+
+            thead {
+                border: 1px solid $header;
+                border-left: none;
+                border-right: none;
+
+                td {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    padding: 20px 0;
+                }
+            }
+
+            tbody {
+                tr td {
+                    padding: 15px;
+                    font-size: 15px;
+
+                    i {
+                        color: rgb(177, 46, 46);
+                    }
+
+                    input {
+                        width: 50px;
+                        height: 35px;
+                        padding-left: 10px;
+                        font-size: 15px;
+                        margin-right: 7px;
+                        border-radius: 7px;
+                        border: 1px solid $hover;
+                    }
+
+                    a:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .sum {
+        align-self: center;
+        width: 280px;
+        height: 180px;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 18px 0;
+        border-radius: 10px;
+        border: 1px solid $hover;
+        text-align: center;
+
+        h2 {
+            font-size: 37px;
+            padding: 10px;
+        }
+
+        div {
+            padding: 0 0 12px;
+
+            span {
+                font-size: 22px;
+                padding: 5px;
+            }
+        }
+
+
+        button {
+            width: 70px;
+            height: 37px;
+            font-size: 17px;
+            border-radius: 7px;
+            background-color: $hover;
+            border: 1px solid $hover;
+            color: white;
+            cursor: pointer;
+            top: 12px;
+        }
+
+        button:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: $hover;
+            transition: all 0.2s;
+        }
+    }
+}

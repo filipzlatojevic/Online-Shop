@@ -1,0 +1,115 @@
+/* responsive */
+@media screen and (max-width:768px) {
+    header {
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .logo {
+            align-self: flex-start;
+            z-index: 3;
+        }
+
+        .burger {
+            display: inline-block;
+            position: absolute;
+            right: 25px;
+            top: 17px;
+            z-index: 3;
+        }
+
+        nav {
+            background-color: $header;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: start;
+            width: 100%;
+            position: absolute;
+            top: 70px;
+            height: 0;
+            transition: all 0.3s ease;
+            overflow: hidden;
+
+            ul {
+                margin-top: 20px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding: 0 5px;
+
+                li {
+                    align-self: flex-start;
+                    margin: 5px 0;
+                }
+            }
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+                margin: 15px 5px;
+                padding: 10px;
+
+                input {
+                    flex-basis: 100%;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+
+    #hero {
+        background-position: 40%;
+        padding: 20px;
+        align-items: flex-start;
+        justify-content: center;
+
+        h1 {
+            font-size: 45px;
+        }
+
+        h2 {
+            font-size: 38px;
+        }
+    }
+
+    .product-details {
+        flex-direction: column;
+    }
+
+    footer .footer-content a,
+    footer .footer-content p {
+        padding: 2px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    #hero {
+        background-position: 30%;
+        padding: 25px 15px;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    footer .footer-content a,
+    footer .footer-content p {
+        padding: 2px;
+        font-size: 12px;
+    }
+}

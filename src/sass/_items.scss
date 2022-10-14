@@ -1,0 +1,92 @@
+article {
+    text-align: center;
+    padding-top: 10px;
+
+    .items-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+
+        .item {
+            width: 250px;
+            border: 1px solid $hover;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+            margin: 15px;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .des {
+                text-align: start;
+                padding: 15px 10px;
+
+                span {
+                    color: $item-span;
+                    font-size: 15px;
+                }
+
+                h5 {
+                    padding-top: 6px;
+                    color: $anchor;
+                    font-size: 17px;
+                }
+
+                .price-container {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-top: 10px;
+
+                    h4 {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: #e8f6ea;
+                        color: $hover;
+                        border: 1px solid $border-green;
+                        transition: all 0.2s ease;
+                        cursor: pointer;
+                        position: absolute;
+                        right: 10px;
+                        bottom: 10px;
+                    }
+
+                    button:hover {
+                        background-color: $hover;
+                        color: white;
+                        transform: scale(1.1);
+                    }
+
+                    i {
+                        transform: scale(0.8);
+                    }
+                }
+            }
+        }
+
+        .item:hover {
+            box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.30);
+            transform: scale(104%);
+
+            img {
+                filter: blur(1px);
+            }
+        }
+    }
+}
